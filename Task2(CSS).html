@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+.horizontal {
+    background-color: #d3d3d3;
+    display:inline-block;
+  }
+  
+  .horizontal a {
+    float: left;
+    color: blue;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+  }
+
+  .horizontal a:not(:last-child) {
+    border-right: 1px solid blue; 
+}
+
+  .horizontal a:hover {
+    background-color: rgb(240, 240, 240);
+    color: black;
+  }
+
+  .horizontal a.active {
+    background-color: #808080;
+    color: white;
+  }
+
+  .vertical {
+    width: 200px;
+  }
+  
+  .vertical a {
+    background-color: #add9e6; 
+    color: blue; 
+    display: block;
+    padding: 15px; 
+    text-decoration: none; 
+  }
+  
+  .vertical a:hover {
+    background-color: #ededed; 
+    color: black;
+  }
+  
+  .vertical a.active {
+    background-color: #fea500; 
+    color: white;
+  }
+    </style>
+</head>
+<body>
+    <h1>CSS TASK 2</h1>
+    <h4>Vertical Navigation Bar:</h4>
+    <div class="vertical">
+        <a class="active" href="index.html">Home</a>
+        <a href="java.html">Java</a>
+        <a href="css.html">CSS</a>
+        <a href="html.html">HTML</a>
+        <a href="bootstrap.html">Bootstrap</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h4>Horizontal Navigation Bar:</h4>
+    <div class="horizontal">
+        <a class="active" href="index.html">Home</a>
+        <a href="java.html">Java</a>
+        <a href="css.html">CSS</a>
+        <a href="html.html">HTML</a>
+        <a href="bootstrap.html">Bootstrap</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDENAVBAR</title>
+    <style>
+        .text {
+    padding-left: 150px;
+    padding-top: 50px;
+}
+
+.sidebar a {
+    position: absolute;
+    left: -85px;
+    transition: 0.5s;
+    padding: 20px;
+    width: 100px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px
+  }
+  
+  .sidebar a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+
+  #about {
+    top: 20px;
+    background-color: #04AA6D;
+  }
+  
+  #blog {
+    top: 80px;
+    background-color: #2196F3; 
+  }
+  
+  #projects {
+    top: 140px;
+    background-color: #f44336;
+  }
+  
+  #contact {
+    top: 200px;
+    background-color:black
+}
+    </style>
+</head>
+<body>
+    <div class = "text">
+        <h1>CSS TASK 4</h1>
+        <h2>Hoverable Sidenav Buttons</h2>
+        <p>Hover over the buttons in the left side navigation to open them</p>
+    </div>
+
+    <div class="sidebar">
+        <a href="#" id="about">About</a>
+        <a href="#" id="blog">Blog</a>
+        <a href="#" id="projects">Projects</a>
+        <a href="#" id="contact">Contact</a>
+    </div>
+    
+</body>
+</html>

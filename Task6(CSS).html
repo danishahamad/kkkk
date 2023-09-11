@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My first styled page</title>
+        <style>
+            input[type=text], input[type=password] {
+width: 100%;
+padding: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+display: inline-block;
+border: 1px solid #bdbdbd;
+}
+
+button {
+    background-color: #4cb050;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+.cancelbtn {
+    max-width: 80px;
+    padding: 10px 15px;
+    background-color: #f44336;
+}
+
+.avatarBox {
+    text-align: center;
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 100%;
+}
+
+.formBox {
+    padding: 16px;
+}
+
+.psw {
+    float:right;
+}
+        </style>
+    </head>
+    <body>
+        <form action="action_page.php" method="post">
+            <div class="avatarBox">
+              <img src="image.jpeg" alt="Avatar" class="avatar">
+            </div>
+          
+            <div class="formBox">
+              <label for="username"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="username" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Login</button>
+
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+          
+            <div class="formBox" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw"><a href="#">Forgot password?</a></span>
+            </div>
+          </form>
+   </body>
+</html>

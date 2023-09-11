@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My first styled page</title>
+        <style>
+            body {
+    padding-left: 11em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: purple;
+    background-color: #d9da3e 
+}
+
+.sidebar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 10px;
+    width: 150px; 
+}
+
+h1 {
+    font-family: Helvetica, Geneva;
+}
+
+.sidebar li {
+    background: white;
+    border-right: 1em solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.sidebar a {
+    text-decoration: none 
+}
+ 
+.horizontal a.active {
+        color: purple;
+}
+    
+hr{
+    border: 1px dashed;
+}
+        </style>
+    </head>
+    <body>
+    <ul class="sidebar">
+        <li><a href="index.html" class="active">Home page</a>
+        <li><a href="musings.html">Musings</a>
+        <li><a href="town.html">My town</a>
+        <li><a href="links.html">Links</a>
+    </ul>
+    
+    
+    <h1>My first styled page</h1>
+    
+    <p>Welcome to my styled page!
+    
+    <p>It lacks images, but at least it has style.
+    And it has links, even if they don't go
+    anywhere...</p>
+    
+    <p>There should be more here, but I don't know
+    what yet.
+    <hr>
+    <p><i>Made 5 April 2004<br>by myself.</i></p>
+    
+    </body>
+</html>
